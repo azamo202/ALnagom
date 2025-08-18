@@ -111,12 +111,7 @@ class OrderResource extends Resource
             ->emptyStateDescription('قم بإنشاء طلب جديد لبدء المشاهدة');
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            \App\Filament\Resources\OrderResource\RelationManagers\OrderItemsRelationManager::class,
-        ];
-    }
+
 
     public static function getPages(): array
     {
