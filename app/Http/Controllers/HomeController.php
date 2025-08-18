@@ -34,7 +34,7 @@ class HomeController extends Controller
         $offers = Offer::latest()->get();
 
         // تمرير البيانات إلى الواجهة
-        return view('pages.home', [
+        return view('home', [
             'featuredProducts' => $featuredProducts,
             'latestProducts' => $latestProducts,
             'mtProducts' => $mtProducts,
