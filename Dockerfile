@@ -23,6 +23,8 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # تعيين مجلد العمل
 WORKDIR /var/www/html
 
+# نسخ كل ملفات المشروع (ما في .env)
+COPY . .
 
 # تثبيت dependencies باستخدام Composer
 RUN composer install --optimize-autoloader --no-dev
