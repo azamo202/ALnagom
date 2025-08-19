@@ -33,7 +33,7 @@ require __DIR__.'/auth.php';
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/cars', function () {
-    return view('Pages.cars-pages');
+    return view('pages.cars-pages');
 })->name('cars');
 
 
@@ -42,23 +42,23 @@ Route::get('/booking/{productId}', Booking::class)
     ->name('booking.form');
 
     Route::get('/flower', function () {
-    return view('Pages.flower-pages');
+    return view('pages.flower-pages');
 })->name('flower');
 
     Route::get('/printers', function () {
-    return view('Pages.printer-pages');
+    return view('pages.printer-pages');
 })->name('printers');
 
  Route::get('/wedding', function () {
-    return view('Pages.wedding-pages');
+    return view('pages.wedding-pages');
 })->name('wedding');
 
  Route::get('/zain', function () {
-    return view('Pages.zain-pages');
+    return view('pages.zain-pages');
 })->name('zain');
 
 Route::get('/product/{id}', function ($id) {
-    return view('Pages.products-pages', ['id' => $id]);
+    return view('pages.products-pages', ['id' => $id]);
 })->name('products');
 
 
