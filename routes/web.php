@@ -54,7 +54,7 @@ Route::get('/booking/{productId}', Booking::class)
 })->name('wedding');
 
  Route::get('/zain', function () {
-    return view('pages.zain-pages');
+    return view('pages.zaino');
 })->name('zain');
 
 Route::get('/product/{id}', function ($id) {
