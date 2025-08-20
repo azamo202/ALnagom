@@ -3,5 +3,5 @@
 @section('title', 'زينة سيارات الأفراح')
 
 @section('content')
-    @livewire('weddingstage')
+    @livewire('wedding-stage')
 @endsection
