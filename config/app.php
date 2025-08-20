@@ -52,7 +52,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://alnagom.onrender.com'),
+    'asset_url' => env('ASSET_URL', 'https://alnagom.onrender.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -79,7 +80,7 @@ return [
     */
 
     'locale' => env('APP_LOCALE', 'en'),
-    
+
     'locale' => 'ar',
 
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),

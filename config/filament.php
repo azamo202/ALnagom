@@ -98,4 +98,6 @@ return [
 
     'system_route_prefix' => 'filament',
 
+
+    'asset_url' => env('ASSET_URL', 'https://alnagom.onrender.com'),
 ];
