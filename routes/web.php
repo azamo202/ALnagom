@@ -11,23 +11,23 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 // صفحات المنتجات
 Route::prefix('products')->group(function () {
     Route::get('/cars', function () {
-        return view('pages.cars-pages');
+        return view('cars-pages');
     })->name('cars');
 
     Route::get('/flower', function () {
-        return view('pages.flower-pages');
+        return view('flower-pages');
     })->name('flower');
 
     Route::get('/printers', function () {
-        return view('pages.printer-pages');
+        return view('printer-pages');
     })->name('printers');
 
     Route::get('/wedding', function () {
-        return view('pages.wedding-pages');
+        return view('wedding-pages');
     })->name('wedding');
 
     Route::get('/product/{id}', function ($id) {
-        return view('pages.products-pages', ['id' => $id]);
+        return view('products-pages', ['id' => $id]);
     })->name('products');
 });
 
