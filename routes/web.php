@@ -33,7 +33,7 @@ Route::prefix('products')->group(function () {
 
 // صفحة خاصة (zain)
 Route::get('/zain', function () {
-    return view('pages.zaino');
+    return view('zaino');
 })->name('zain');
 
 // نظام الحجوزات
