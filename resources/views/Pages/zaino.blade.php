@@ -3,5 +3,8 @@
 @section('title', 'زينة سيارات الأفراح')
 
 @section('content')
-    @livewire('zain')
+    <div class="container">
+        <h1>زينة سيارات الأفراح - صفحة تحت التطوير</h1>
+        <p>المحتوى قيد الإعداد</p>
+    </div>
 @endsection
